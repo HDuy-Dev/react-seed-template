@@ -3,7 +3,6 @@
 import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
-import chalk from 'chalk';
 
 const projectName = process.argv[2] || 'my-new-project';
 const templateRepo = 'https://github.com/HDuy-Dev/react-seed-template.git';
@@ -27,48 +26,54 @@ function compareVersions(a, b) {
 const currentNodeVersion = process.version.slice(1); // Remove the "v" prefix
 if (compareVersions(currentNodeVersion, MIN_NODE_VERSION) < 0) {
   console.error(
-    chalk.red.bold(
-      `❌ Node.js ${MIN_NODE_VERSION} or higher is required. You are using ${currentNodeVersion}.`,
-    ),
+    '\x1b[31m\x1b[1m❌ Node.js ' +
+      MIN_NODE_VERSION +
+      ' or higher is required. You are using ' +
+      currentNodeVersion +
+      '.\x1b[0m',
   );
   process.exit(1);
 }
 
 console.log(
-  chalk.blue.bold(`\n🚀 Starting setup for ${chalk.yellow(projectName)}...\n`),
+  '\x1b[34m\x1b[1m\n🚀 Starting setup for \x1b[33m' +
+    projectName +
+    '\x1b[34m...\n\x1b[0m',
 );
 
 // Clone the template
-console.log(chalk.greenBright(`📂 Cloning template from ${templateRepo}...`));
+console.log(
+  '\x1b[32m\x1b[1m📂 Cloning template from ' + templateRepo + '...\x1b[0m',
+);
 execSync(`git clone ${templateRepo} ${projectName}`, { stdio: 'inherit' });
 
-console.log(chalk.greenBright(`✅ Template cloned successfully.`));
+console.log('\x1b[32m✅ Template cloned successfully.\x1b[0m');
 
 // Navigate to the project folder
 process.chdir(path.join(process.cwd(), projectName));
 
 // Remove Git history
-console.log(chalk.magentaBright(`🗑️ Removing Git history...`));
+console.log('\x1b[35m\x1b[1m🗑️ Removing Git history...\x1b[0m');
 fs.rmSync(path.join(process.cwd(), '.git'), { recursive: true, force: true });
 
-console.log(chalk.greenBright(`✅ Git history removed.`));
+console.log('\x1b[32m✅ Git history removed.\x1b[0m');
 
 // Install dependencies
-console.log(chalk.cyanBright(`📦 Installing dependencies with Yarn...`));
+console.log('\x1b[36m\x1b[1m📦 Installing dependencies with Yarn...\x1b[0m');
 execSync('yarn install', { stdio: 'inherit' });
 
-console.log(chalk.greenBright(`✅ Dependencies installed.`));
+console.log('\x1b[32m✅ Dependencies installed.\x1b[0m');
 
 // Final instructions
 console.log(
-  chalk.bgGreen.black.bold(
-    `\n🎉 Project ${projectName} is ready! Follow the steps below to get started:\n`,
-  ),
+  '\x1b[42m\x1b[30m\x1b[1m\n🎉 Project ' +
+    projectName +
+    ' is ready! Follow the steps below to get started:\n\x1b[0m',
 );
-console.log(chalk.yellowBright(`1️⃣  Navigate into your project folder:`));
-console.log(chalk.cyanBright(`    cd ${projectName}\n`));
-console.log(chalk.yellowBright(`2️⃣  Start the development server:`));
-console.log(chalk.cyanBright(`    yarn dev\n`));
+console.log('\x1b[33m1️⃣  Navigate into your project folder:\x1b[0m');
+console.log('\x1b[36m    cd ' + projectName + '\n\x1b[0m');
+console.log('\x1b[33m2️⃣  Start the development server:\x1b[0m');
+console.log('\x1b[36m    yarn dev\n\x1b[0m');
 console.log(
-  chalk.bgMagenta.black.bold(`\n✨ Enjoy coding your new React project! ✨\n`),
+  '\x1b[45m\x1b[30m\x1b[1m\n✨ Enjoy coding your new React project! ✨\n\x1b[0m',
 );
