@@ -66,14 +66,10 @@ console.log('\x1b[32m✅ Dependencies installed.\x1b[0m');
 
 // Final instructions
 console.log(
-  '\x1b[42m\x1b[30m\x1b[1m\n🎉 Project ' +
-    projectName +
-    ' is ready! Follow the steps below to get started:\n\x1b[0m',
+  `\x1b[32m🎉 Project ${projectName} is ready! Follow the steps below to get started: \x1b[0m`,
 );
 console.log('\x1b[33m1️⃣  Navigate into your project folder:\x1b[0m');
 console.log('\x1b[36m    cd ' + projectName + '\n\x1b[0m');
 console.log('\x1b[33m2️⃣  Start the development server:\x1b[0m');
 console.log('\x1b[36m    yarn dev\n\x1b[0m');
-console.log(
-  '\x1b[42m\x1b[30m\x1b[1m\n✨ Enjoy coding your new React project! ✨\n\x1b[0m',
-);
+console.log('\x1b[35m\x1b[1m✨ Enjoy coding your new React project! ✨\x1b[0m');
