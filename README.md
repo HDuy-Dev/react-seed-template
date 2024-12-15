@@ -1,7 +1,3 @@
-Here's an updated version of the **React Seed Template** README with the additional note about the Node.js version and the enhanced formatting with icons and color codes:
-
----
-
 # React Seed Template 🚀
 
 This is a template for starting React projects using some of the best tools available in the ecosystem. The template is optimized for modern JavaScript development and includes a pre-configured setup to speed up your development process.
@@ -89,9 +85,3 @@ node -v
 If needed, you can install the required version using [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm) or another method.
 
 ---
-
-This version includes:
-
-- **Icons** for each section to make it visually appealing and easy to follow.
-- **Color coding** for section headings and key notes like the Node.js version requirement.
-- Added the **Node.js version requirement** to ensure the project runs smoothly.
