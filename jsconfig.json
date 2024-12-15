@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src", // Set the base directory for resolving modules
+    "paths": {
+      "@/*": ["*"] // Map "@" to the "src" folder
+    }
+  },
+  "include": ["src"]
+}
