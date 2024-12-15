@@ -66,7 +66,7 @@ console.log('\x1b[32m✅ Dependencies installed.\x1b[0m');
 
 // Final instructions
 console.log(
-  `\x1b[32m🎉 Project ${projectName} is ready! Follow the steps below to get started: \x1b[0m`,
+  `\x1b[32m\x1b[1m🎉 Project ${projectName} is ready! Follow the steps below to get started: \x1b[0m`,
 );
 console.log('\x1b[33m1️⃣  Navigate into your project folder:\x1b[0m');
 console.log('\x1b[36m    cd ' + projectName + '\n\x1b[0m');
