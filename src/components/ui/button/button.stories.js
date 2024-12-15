@@ -3,7 +3,7 @@ import { fn } from '@storybook/test';
 import { Button } from './button';
 
 export default {
-  title: 'UI/Button',
+  title: 'Components/Button',
   component: Button,
   parameters: {
     layout: 'centered',

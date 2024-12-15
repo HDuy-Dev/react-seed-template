@@ -1,7 +1,6 @@
 {
-  "name": "react-seed",
-  "private": true,
-  "version": "0.0.0",
+  "name": "react-seed-template",
+  "version": "1.0.6",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -56,5 +55,8 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "bin": {
+    "create-react-seed-template": "./init-template.js"
   }
 }
