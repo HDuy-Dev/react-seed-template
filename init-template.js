@@ -75,5 +75,5 @@ console.log('\x1b[36m    cd ' + projectName + '\n\x1b[0m');
 console.log('\x1b[33m2️⃣  Start the development server:\x1b[0m');
 console.log('\x1b[36m    yarn dev\n\x1b[0m');
 console.log(
-  '\x1b[45m\x1b[30m\x1b[1m\n✨ Enjoy coding your new React project! ✨\n\x1b[0m',
+  '\x1b[42m\x1b[30m\x1b[1m\n✨ Enjoy coding your new React project! ✨\n\x1b[0m',
 );
