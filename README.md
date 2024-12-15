@@ -1,14 +1,18 @@
-# React Seed Template
+Here's an updated version of the **React Seed Template** README with the additional note about the Node.js version and the enhanced formatting with icons and color codes:
+
+---
+
+# React Seed Template 🚀
 
 This is a template for starting React projects using some of the best tools available in the ecosystem. The template is optimized for modern JavaScript development and includes a pre-configured setup to speed up your development process.
 
-## Key Features
+## Key Features ✨
 
-### Core Setup
+### Core Setup 🔧
 
 - **Vite + JavaScript**: A fast and modern build tool for React projects with hot module replacement and optimized performance.
 
-### Tools Included
+### Tools Included 🛠️
 
 1. **Tailwind CSS**: A utility-first CSS framework for rapid UI development with a responsive design system.
 2. **React Router**: A powerful routing library for handling dynamic and nested routes in your React applications.
@@ -22,7 +26,7 @@ This is a template for starting React projects using some of the best tools avai
 10. **Prettier**: A code formatter that enforces consistent coding style across your project.
 11. **ESLint**: A linter to ensure code quality and consistency by identifying problematic patterns in your JavaScript code.
 
-### Project Structure
+### Project Structure 🗂️
 
 The project is organized into the following structure for scalability and maintainability:
 
@@ -40,7 +44,7 @@ project-root/
 │   ├── test/              # Test utilities and mock data
 ```
 
-### Absolute Path Setup
+### Absolute Path Setup 🔑
 
 The project has been pre-configured to use absolute paths. You can import modules from the `src` folder using the `@` alias. For example:
 
@@ -49,7 +53,7 @@ import Button from '@/components/Button';
 import useFetch from '@/hooks/useFetch';
 ```
 
-## Usage
+## Usage 📦
 
 To create a new project using this template, run the following command:
 
@@ -73,3 +77,21 @@ yarn dev
 ```
 
 Your project is now ready to use!
+
+## ⚠️ Node.js Version Requirement
+
+Ensure that you have **Node.js >= 20.0.0** installed. You can verify your Node.js version by running:
+
+```bash
+node -v
+```
+
+If needed, you can install the required version using [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm) or another method.
+
+---
+
+This version includes:
+
+- **Icons** for each section to make it visually appealing and easy to follow.
+- **Color coding** for section headings and key notes like the Node.js version requirement.
+- Added the **Node.js version requirement** to ensure the project runs smoothly.
